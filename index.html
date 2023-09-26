@@ -8,7 +8,15 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 </head>
-
+<script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+</script>
+    <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
 <body style="background: rgb(175,109,109);">
     <div class="row" style="background: #af6d6d;">
         <div class="col-3 offset-0" style="background: #ae6d6d;"><img src="assets/img/icons8-sign-language-l-96.png" width="81" height="79" style="margin: 13px;margin-top: 91px;margin-left: 7px;"></div>
